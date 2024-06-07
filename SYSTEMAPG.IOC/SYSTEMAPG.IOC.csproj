@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SYSTEMAPG.BLL\SYSTEMAPG.BLL.csproj" />
+    <ProjectReference Include="..\SYSTEMAPG.DAL\SYSTEMAPG.DAL.csproj" />
+  </ItemGroup>
+
+</Project>

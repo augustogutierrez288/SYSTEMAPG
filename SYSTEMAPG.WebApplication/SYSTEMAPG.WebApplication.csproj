@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SYSTEMAPG.BLL\SYSTEMAPG.BLL.csproj" />
+    <ProjectReference Include="..\SYSTEMAPG.IOC\SYSTEMAPG.IOC.csproj" />
+    <ProjectReference Include="..\SYSTEMAPGEntity\SYSTEMAPGEntity.csproj" />
+  </ItemGroup>
+
+</Project>
