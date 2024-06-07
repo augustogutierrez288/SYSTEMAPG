@@ -7,6 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.16" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\SYSTEMAPG.BLL\SYSTEMAPG.BLL.csproj" />
     <ProjectReference Include="..\SYSTEMAPG.IOC\SYSTEMAPG.IOC.csproj" />
     <ProjectReference Include="..\SYSTEMAPGEntity\SYSTEMAPGEntity.csproj" />
