@@ -10,8 +10,8 @@ using SYSTEMAPG.DAL.DBContext;
 using Microsoft.EntityFrameworkCore;
 //using SYSTEMAPG.BLL.Implementation;
 //using SYSTEMAPG.BLL.Interfaces;
-//using SYSTEMAPG.DAL.Impletation;
-//using SYSTEMAPG.DAL.Interfaces;
+using SYSTEMAPG.DAL.Implementation;
+using SYSTEMAPG.DAL.Interfaces;
 
 namespace SYSTEMAPG.IOC
 {
@@ -23,6 +23,10 @@ namespace SYSTEMAPG.IOC
             {
                 options.UseSqlServer(configuration.GetConnectionString("Connection"));
             });
+
+            services.AddTransient(typeof(IGenericRepository<>), typeof(GenericRepository<>));
+
+            services.AddScoped<ISalesRepository, SalesRepository>();
         }
     }
 }
